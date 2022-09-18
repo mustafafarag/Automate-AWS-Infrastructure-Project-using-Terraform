@@ -18,12 +18,13 @@ We must add these resources to our .tf file
 Steps : 
 
 Create custom vpc.
-![](images/.1png)
+
+![](images/1.png)
 
 
 
 Create a custom subnet.
-![](images/.2png)
+![](images/2.png)
 
 Carete cidr blocks ( VPC & Subnet). 
 Create route table and internet gateway provision ec2 instance.  
