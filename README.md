@@ -2,12 +2,12 @@
 
 
 
-The Project Goal here is :
+## The Project Goal here is :
 
-Using Terraform to provision AWS Infrastructure to :
+      Using Terraform to provision AWS Infrastructure to :
 
-Prevision an aws-ec2 instance on aws infrastructure.
-Run nginx docker container on ec2-instance.
+      Prevision an aws-ec2 instance on aws infrastructure.
+      Run nginx docker container on ec2-instance.
 
 
 
@@ -20,16 +20,20 @@ Steps :
 
 Add AWS Provider
 
+
 ![](images/13.png)
 
 
 Create custom vpc.
+
 
 ![](images/1.png)
 
 
 
 Create a custom subnet.
+
+
 ![](images/2.png)
 
 
@@ -37,6 +41,7 @@ Create a custom subnet.
 
 
 Carete cidr blocks ( VPC & Subnet).
+
 
 cidr block will be referenced from the tf.vars file and and
 be added as  ( cidr_block = var.subnet_cidr_blocks ) and   cidr_block = var.vpc_cidr_blocks
@@ -48,15 +53,24 @@ into both vpc and subnet resources
 
 Create route table and internet gateway provision ec2 instance.  
 
+
+
 ![](images/3.png)
+
 
 
 ![](images/4.png)
 
 
-and must associate created subnet with the route table created
+
+
+And must associate created subnet with the route table created
 
 ![](images/5.png)
+
+
+
+
 
 Create a security group.
 
@@ -92,7 +106,7 @@ server-key.pub file is refrenced from the .tfvars file
 
 
 
-
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 Final step :
@@ -102,6 +116,7 @@ Final step :
 
 We create a entry-server.sh file and reference it into our ec2 instance resource by adding user_data attribute
 
+
 ![](images/11.png)
 
 
@@ -109,7 +124,9 @@ We create a entry-server.sh file and reference it into our ec2 instance resource
 
 
 
-all used varabiles are defined in the .tf file
+
+All used varabiles are defined in the .tf file
+
 
 
 ![](images/10.png)
