@@ -146,10 +146,42 @@ All used varabiles are defined in the .tf file
 
 
 
+
+
+
+
  NOTE : **Both AWS_ACCESS_KEY anad AWS_SECRET_ACCESS_KEY ( AWS CRedinaltis)
 was defined as environmental  variables**
 
 
+
+Now Checking For Results : 
+
+If We SSH into the sserver and run ( docker ps ) command will found nginx contanier running and we can access it throught the browser by URL 
+
+![](images/14.png)
+
+
+
+![](images/15.png)
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Built With 
+
+- [Terraform](https://www.terraform.io/) Infrastructure as code, software tool
+- [Amazon AWS EC2-Instance](https://aws.amazon.com/) Cloud services
+- [Docker](https://www.docker.com/) Containerization Tool
+- [bash](https://www.gnu.org/software/bash/) Scripting language
 
 
 
