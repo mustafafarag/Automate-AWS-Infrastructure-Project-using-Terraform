@@ -6,8 +6,8 @@
 
  ###### Using Terraform to provision AWS Infrastructure to :
 
-             - Prevision an aws-ec2 instance on aws infrastructure.
-             - Run nginx docker container on ec2-instance.
+- Prevision an aws-ec2 instance on aws infrastructure.
+- Run nginx docker container on ec2-instance.
 
 
 
@@ -141,6 +141,9 @@ All used varabiles are defined in the .tf file
 
 
 
-Both AWS_ACCESS_KEY anad AWS_SECRET_ACCESS_KEY ( AWS CRedinaltis)
-was defined as environmental  variables 
+
+
+
+ NOTE : **Both AWS_ACCESS_KEY anad AWS_SECRET_ACCESS_KEY ( AWS CRedinaltis)
+was defined as environmental  variables**
 
