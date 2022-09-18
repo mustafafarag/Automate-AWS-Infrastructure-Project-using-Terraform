@@ -4,34 +4,39 @@
 
 ## The Project Goal here is :
 
-      Using Terraform to provision AWS Infrastructure to :
+ ###### Using Terraform to provision AWS Infrastructure to :
 
-      Prevision an aws-ec2 instance on aws infrastructure.
-      Run nginx docker container on ec2-instance.
+             - Prevision an aws-ec2 instance on aws infrastructure.
+             - Run nginx docker container on ec2-instance.
 
 
 
-First
+
+
+First : 
 we have to provision aws infrastructure to do that using Terraform
 We must add these resources to our .tf file
+
+
+
 Steps :
 
 
 
-Add AWS Provider
+- Add AWS Provider
 
 
 ![](images/13.png)
 
 
-Create custom vpc.
+- Create custom vpc.
 
 
 ![](images/1.png)
 
 
 
-Create a custom subnet.
+- Create a custom subnet.
 
 
 ![](images/2.png)
@@ -40,7 +45,7 @@ Create a custom subnet.
 
 
 
-Carete cidr blocks ( VPC & Subnet).
+- Create cidr blocks ( VPC & Subnet).
 
 
 cidr block will be referenced from the tf.vars file and and
@@ -51,7 +56,7 @@ into both vpc and subnet resources
 
 
 
-Create route table and internet gateway provision ec2 instance.  
+- Create route table and internet gateway provision ec2 instance.  
 
 
 
@@ -64,7 +69,7 @@ Create route table and internet gateway provision ec2 instance.
 
 
 
-And must associate created subnet with the route table created
+- And must associate created subnet with the route table created
 
 ![](images/5.png)
 
@@ -72,7 +77,7 @@ And must associate created subnet with the route table created
 
 
 
-Create a security group.
+- Create a security group.
 
 ![](images/6.png)
 
@@ -80,11 +85,12 @@ Create a security group.
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
 
-Second :
+**Second :**
+
 Provision ec2 instance :
 
-
 We must add these resources to our .tf file
+
 
 
 1 - Create a key pair for ssh into instance.
@@ -94,9 +100,11 @@ server-key.pub file is refrenced from the .tfvars file
 ![](images/7.png)
 
 
+
 2- Fetch and filter the desired os image we want to run on the server
 
 ![](images/8.png)
+
 
 
 3- Create EC2-Instance resource
