@@ -4,7 +4,7 @@
 
 ## The Project Goal here is :
 
-###### Using Terraform to provision AWS Infrastructure to :
+ Using Terraform to provision AWS Infrastructure to :
 
 - Prevision an aws-ec2 instance on aws infrastructure.
 - Run nginx docker container on ec2-instance.
